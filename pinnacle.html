@@ -1,0 +1,48 @@
+<!Doctype html>
+<html>
+<style>
+.btn-group button {
+    background-color: #4CAF50; /* Green background */
+    border: 1px solid yellow; /* Green border */
+    color: white; /* White text */
+    padding: 10px 24px; /* Some padding */
+    cursor: pointer; /* Pointer/hand icon */
+    width: 15%; /* Set a width if needed */
+    display: block; /* Make the buttons appear below each other */
+    position: relative;
+    left: 30px;
+    top: 50px;
+}
+
+.btn-group button:not(:last-child) {
+    border-bottom: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+    background-color: yellow;
+}
+
+.logo img {
+  display: block;
+  margin: 0 auto;
+}
+</style>
+<body>
+
+<script src="script.js"></script>
+
+<div class="logo">
+  <img src="images/logo.png">
+</div>
+
+<p id="demo">A paragraph.</p>
+<p>The above paragraph will change when you press the Button 1</p>
+<div class="btn-group">
+  <button onclick="myFunction()">Button 1</button>
+  <button>Button 2</button>
+  <button>Button 3</button>
+</div>
+
+</body>
+</html>
